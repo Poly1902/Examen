@@ -1,10 +1,9 @@
 import { DataTypes } from "sequelize";
 import {sequelize} from '../DB/conexiondb.js';
-import {profesormodel} from '../model/profesormodel.js';
 import {estudiantemodel} from '../model/estudiantemodel.js';
 
 export const Notas = sequelize.define(
-  'Cal',
+  'Calificaciones',
   {
     id: {
       type: DataTypes.INTEGER,

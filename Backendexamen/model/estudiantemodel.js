@@ -1,6 +1,5 @@
 import { DataTypes } from "sequelize";
 import {sequelize} from '../DB/conexiondb.js';
-import {profesormodel} from '../model/profesormodel.js';
 
 export const Estudiante = sequelize.define(
   'Datos',
@@ -39,3 +38,4 @@ export const Estudiante = sequelize.define(
     timestamps: false,
   },
 );
+Profesor.hasMany(Estudiante, { foreignKey: 'ProfesorId' });
